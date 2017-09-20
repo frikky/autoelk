@@ -53,7 +53,7 @@ winlogbeat.event_logs:
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["172.28.150.3:5000"]
+  hosts: ["127.0.0.1:5000"]
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
