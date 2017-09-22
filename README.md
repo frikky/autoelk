@@ -1,6 +1,6 @@
 # ELK stack
 
-# Server (ubuntu/debian/similar)
+# Server (Tested on Ubuntu 1604)
 > $ ./docker.sh<br>
 > $ ./elk.sh
 
