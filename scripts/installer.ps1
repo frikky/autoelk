@@ -54,6 +54,7 @@ function winlogbeat
 # Workaround for winpcap
 function installchoco
 {
+	ExecutionPolicy unrestricted
 	Set-ExecutionPolicy AllSigned; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 }
 
@@ -80,9 +81,10 @@ function packetbeat
 
 	installchoco
 	choco install winpcap
+	Start-Service packetbeat
+
 	uninstallchoco
 
-	Start-Service packetbeat
 }
 
-packetbeat()
+packetbeat
