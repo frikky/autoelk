@@ -17,6 +17,8 @@
 # forwarded, ignore_older, level, event_id, provider, and include_xml. Please
 # visit the documentation for the complete details of each option.
 # https://go.es.io/WinlogbeatConfig
+#
+# Uses only sysmon currently. Just add more as necessary
 winlogbeat.event_logs:
   - name: Microsoft-Windows-Sysmon/Operational
 
