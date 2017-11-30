@@ -1,4 +1,4 @@
-Param([string]$ip = "http://172.28.133.250:8000", [string]$domain = "evil.corp", [string]$gpo = "false")
+Param([string]$ip = "", [string]$domain = "", [string]$gpo = "false")
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 Add-Type -AssemblyName PresentationFramework

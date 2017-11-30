@@ -84,7 +84,7 @@ packetbeat.protocols.nfs:
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["172.28.150.3:9200"]
+  hosts: [""]
 
   # Optional protocol and basic auth credentials.
   #protocol: "https"
